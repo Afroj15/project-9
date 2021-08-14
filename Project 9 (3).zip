@@ -1,0 +1,80 @@
+
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Project 9</title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="./Project 9 (3)_files/jquery-1.12.1.min.js.download"></script>
+        <script src="./Project 9 (3)_files/gamelab-api.js.download"></script>
+    <link href="./Project 9 (3)_files/gamelab.css" rel="stylesheet" type="text/css">
+    <script src="./Project 9 (3)_files/p5.js.download"></script>
+    <script src="./Project 9 (3)_files/p5.play.js.download"></script>
+    <script src="./Project 9 (3)_files/code.js.download"></script>
+    <style>
+      body.expo {
+        background-color: black;
+      }
+      #sketch.expo.no-controls {
+        top: 82px;
+      }
+    </style>
+  </head>
+  <body class="web" style="margin:0; overflow:hidden; user-select:none; -webkit-user-select:none; -webkit-touch-callout:none; position:fixed; top:0; left:0; width:400px; height:565px;">
+    <div id="sketch" class="web" style="position:absolute;"><canvas id="defaultCanvas0" width="800" height="800" style="width: 400px; height: 400px;"></canvas></div>
+    <div id="soft-buttons" style="display: none">
+      <button id="leftButton" disabled="" classname="arrow">
+      </button>
+      <button id="rightButton" disabled="" classname="arrow">
+      </button>
+      <button id="upButton" disabled="" classname="arrow">
+      </button>
+      <button id="downButton" disabled="" classname="arrow">
+      </button>
+    </div>
+    <div id="studio-dpad-container" style="position:absolute; width:400px; bottom:5px; height:157px; overflow-y:hidden;"><div id="studio-dpad">
+  <div id="studio-dpad-rim"></div>
+  <div id="studio-dpad-cone"></div>
+  <button id="studio-dpad-button"></button>
+  <button id="studio-space-button"></button>
+</div>
+</div>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
